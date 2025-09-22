@@ -15,12 +15,22 @@ It will:
  4) Normalise each question into a CSV row using db_upload's schema helpers
 
 Usage example:
+  MAC:
   export OPENAI_API_KEY=sk-...
   python batch_generate.py \
       --out-dir out \
       --n 30 \
       --model gpt-5 \
       --batch-size 10 \
+      --temperature 1
+
+  Windows:
+  set OPENAI_API_KEY=sk-...
+  python batch_generate.py ^
+      --out-dir out ^
+      --n 30 ^
+      --model gpt-5 ^
+      --batch-size 10 ^
       --temperature 1
 
 Notes:
